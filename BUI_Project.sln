@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "BUI_Project", "BUI_Project\BUI_Project.dwproj", "{6D1F7FB6-239F-424F-A1BA-DC56A7B3AC37}"
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WideWorldImportersMD", "BUI_Project\WideWorldImportersMD.dwproj", "{6D1F7FB6-239F-424F-A1BA-DC56A7B3AC37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
