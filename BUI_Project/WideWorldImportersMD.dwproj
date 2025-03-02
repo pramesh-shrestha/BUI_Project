@@ -6,6 +6,18 @@
     <Name>BUI_Project.database</Name>
     <FullPath>BUI_Project.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Wide World Importers.cube</Name>
+      <FullPath>Wide World Importers.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Wide World Importers.partitions</Name>
+          <FullPath>Wide World Importers.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>City.dim</Name>
