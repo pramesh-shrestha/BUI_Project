@@ -6,6 +6,36 @@
     <Name>BUI_Project.database</Name>
     <FullPath>BUI_Project.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>City.dim</Name>
+      <FullPath>City.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Item.dim</Name>
+      <FullPath>Item.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Current Item.dim</Name>
+      <FullPath>Current Item.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Salesperson.dim</Name>
+      <FullPath>Salesperson.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice.dim</Name>
+      <FullPath>Invoice.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Wide World Importers DW.ds</Name>
