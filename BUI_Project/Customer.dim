@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5695" scrolltop="-9252" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14834" y="22154" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Customer" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3404" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004c0d0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Cube_Customer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-5695</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-9252</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -52,53 +78,6 @@
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="8553dd5a-66ac-4d27-ae19-5050e1ac6b0b">
-      <ID>Customer Key</ID>
-      <Name>Customer Key</Name>
-      <Usage>Key</Usage>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="514428cc-416b-4e72-877e-c359c737b225">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d16dd65-78b0-4aba-b844-d032cea41271">
-            <TableID>Cube_Customer</TableID>
-            <ColumnID>Customer_x0020_Key</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="13a3008a-1469-4144-88a6-b1af97658966">
-          <AttributeID>WWI Customer ID</AttributeID>
-          <Name>WWI Customer ID</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="98c668b2-1ca8-44b8-bb43-2725f63c22ff">
-          <AttributeID>Customer</AttributeID>
-          <Name>Customer</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0c53bb53-c1af-44ab-987c-48740582e62a">
-          <AttributeID>Bill To Customer</AttributeID>
-          <Name>Bill To Customer</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4ad5d2c3-8085-49b0-a67c-12132a504b84">
-          <AttributeID>Category</AttributeID>
-          <Name>Category</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2ca3560e-88ef-4e0f-851b-cf1c3f976267">
-          <AttributeID>Buying Group</AttributeID>
-          <Name>Buying Group</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a854fda4-a9d2-4fb2-b414-ee2432349a74">
-          <AttributeID>Primary Contact</AttributeID>
-          <Name>Primary Contact</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5828bcd2-54c4-4d35-981f-f88526822f30">
-          <AttributeID>Postal Code</AttributeID>
-          <Name>Postal Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
     <Attribute dwd:design-time-name="f4501502-e497-439a-95c7-27654b192a7d">
       <ID>WWI Customer ID</ID>
       <Name>WWI Customer ID</Name>
@@ -118,16 +97,24 @@
     <Attribute dwd:design-time-name="7987bcf1-a092-4e40-a021-8f2f51b5b32f">
       <ID>Customer</ID>
       <Name>Customer</Name>
+      <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dffa8392-e83e-4da1-b1a4-f3f5060e8b22">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="703c5f89-5212-4dfe-8c51-f1bd1c7b4efb">
+        <KeyColumn dwd:design-time-name="4e6d9dde-e278-472e-907f-cf94de009c5e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3a5147b-12ce-4423-a8c4-9b7798fba548">
             <TableID>Cube_Customer</TableID>
-            <ColumnID>Customer</ColumnID>
+            <ColumnID>Customer_x0020_Key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="0a1402e4-5056-4a35-9ab3-78158a6c6aa0">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2519090c-cb0b-425f-9af5-52a924c07606">
+          <TableID>Cube_Customer</TableID>
+          <ColumnID>Customer</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>

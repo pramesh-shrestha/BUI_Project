@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5069" scrolltop="-8722" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14834" y="22154" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="City" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4657" height="4710" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003112000066120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Cube_City" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-5069</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-8722</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -53,61 +79,6 @@
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="edc43d6e-30b8-4472-a40e-c3814c6cd41d">
-      <ID>City Key</ID>
-      <Name>City Key</Name>
-      <Usage>Key</Usage>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="df5f7cd4-caef-4da5-9eb2-81a7d1b8641e">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="714594b9-02a7-4ccb-a101-0867b371ff7d">
-            <TableID>Cube_City</TableID>
-            <ColumnID>City_x0020_Key</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="f5c51b0b-a4f0-4e29-bc24-448f339ea2d8">
-          <AttributeID>WWI City ID</AttributeID>
-          <Name>WWI City ID</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="983edac0-63ea-42fe-bffa-9bf234824459">
-          <AttributeID>City</AttributeID>
-          <Name>City</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="35859bf5-41df-4a0d-a555-77febbff3780">
-          <AttributeID>State Province</AttributeID>
-          <Name>State Province</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="79e6098c-bbf5-474c-84fb-41fe0d30a43e">
-          <AttributeID>Country</AttributeID>
-          <Name>Country</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0925df67-476d-471c-9236-2d246a2633c8">
-          <AttributeID>Continent</AttributeID>
-          <Name>Continent</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8e235d87-e810-4411-a151-c47d303ee3ac">
-          <AttributeID>Sales Territory</AttributeID>
-          <Name>Sales Territory</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8d5b0ced-13ab-4a72-b9c5-6da832564600">
-          <AttributeID>Region</AttributeID>
-          <Name>Region</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="27935e83-2298-4088-b837-470dbf1af7a5">
-          <AttributeID>Subregion</AttributeID>
-          <Name>Subregion</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="85e37288-b74e-4e0d-926d-1eb86d7f370f">
-          <AttributeID>Latest Recorded Population</AttributeID>
-          <Name>Latest Recorded Population</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
     <Attribute dwd:design-time-name="e336cc43-de57-4c6c-a9ec-568711652972">
       <ID>WWI City ID</ID>
       <Name>WWI City ID</Name>
@@ -128,16 +99,24 @@
       <ID>City</ID>
       <Name>City</Name>
       <Type>City</Type>
+      <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a6f1e7a-7c14-4bd6-8f6a-62bfd2614910">
-          <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5a94b5f-c710-494a-b11e-4f11e38a9725">
+        <KeyColumn dwd:design-time-name="a8626fc8-6840-4735-a9d4-68492a2e107c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a0c1c0c-78a1-4a75-a27e-24b8cb982940">
             <TableID>Cube_City</TableID>
-            <ColumnID>City</ColumnID>
+            <ColumnID>City_x0020_Key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="1a51d972-3497-46e4-92ae-0998467696cd">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a974ae8-9345-450c-a6fc-0d1e80390ec3">
+          <TableID>Cube_City</TableID>
+          <ColumnID>City</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
