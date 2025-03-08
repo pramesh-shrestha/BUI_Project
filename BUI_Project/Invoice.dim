@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="205f67e5-4793-42fb-8e0e-7689f356a6b7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="afdfdad6-b1a6-4970-bbe6-6a5895c3f1e7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Invoice</ID>
   <Name>Invoice</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -101,31 +101,32 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2f3919e9-580e-4ff3-8bc6-ddf2c620a068">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="56442791-4166-48a6-850d-3613c36522b1">
     <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="bcbf28f3-3a21-4038-9b02-310181b367b3">
+  <ErrorConfiguration dwd:design-time-name="74b469b0-b91d-4b24-8413-c7ea04edb914">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="543f0c91-ec57-46d3-b8be-9d7991e5aaf6">
+    <Attribute dwd:design-time-name="f9a93e5f-83d9-47bb-8ffc-aca4a04d8d11">
       <ID>Invoice Number</ID>
       <Name>Invoice Number</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>70510</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7ea80c5d-7a60-4750-a1f5-2b75c4771788">
+        <KeyColumn dwd:design-time-name="4f7a7dea-8d00-48a8-bf05-88d5a1ad8064">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b75f1b8-e848-4702-8628-01fb634f028b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59dd3ef1-f53a-4403-ac6c-dbee8e3b20f4">
             <TableID>Cube_Invoice</TableID>
             <ColumnID>WWI_x0020_Invoice_x0020_ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a1600d1c-d035-454e-9dba-69b769edbce2">
+        <AttributeRelationship dwd:design-time-name="f40bbb36-b3e7-44ef-9ad4-19ed921cd160">
           <AttributeID>Invoice Date</AttributeID>
           <Name>Invoice Date</Name>
         </AttributeRelationship>
@@ -134,21 +135,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="64a0a72d-66c5-4be2-aebb-28e7e8f7cb63">
+    <Attribute dwd:design-time-name="9f1d90c3-e684-4724-91ef-4ec803c80a7e">
       <ID>Invoice Date</ID>
       <Name>Invoice Date</Name>
+      <EstimatedCount>1069</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="05cd84e3-1889-41cb-a4d7-4aa890a7aec7">
+        <KeyColumn dwd:design-time-name="1a2070e2-9b2f-41bb-912a-abb85823e24d">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc5b7e2b-5380-46c7-ae89-f630695f7e7d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0002dc90-23a1-4d04-a7d8-b8cc26363d05">
             <TableID>Cube_Invoice</TableID>
             <ColumnID>Invoice_x0020_Date</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="945b8d75-f79d-4c3e-8b42-5ea5c6be1bde">
+        <AttributeRelationship dwd:design-time-name="4fce5463-f963-4446-a0b4-deea6e249032">
           <AttributeID>Invoice Month</AttributeID>
           <Name>Invoice Month</Name>
         </AttributeRelationship>
@@ -157,21 +159,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="29f07f9d-d7ad-41d4-893a-53e55ff5e2f4">
+    <Attribute dwd:design-time-name="ab45c401-d267-4ce4-97c9-23c6ef6a36e0">
       <ID>Invoice Month</ID>
       <Name>Invoice Month</Name>
+      <EstimatedCount>41</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="722104ca-9a2e-4a5f-b720-bc35e9c985c9">
+        <KeyColumn dwd:design-time-name="cd386f26-4007-4403-9872-1c833d25a5c9">
           <DataType>WChar</DataType>
           <DataSize>61</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf536775-a869-450b-8a63-d6f96eb80b99">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70d74680-4fa6-4c7b-9412-5d0e63790ba0">
             <TableID>Cube_Invoice</TableID>
             <ColumnID>Invoice_x0020_Month</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="42f162d6-25f8-4f5f-b979-d73c9238ec88">
+        <AttributeRelationship dwd:design-time-name="f3982798-6bb8-4522-88d0-8fe7c06db384">
           <AttributeID>Invoice Year</AttributeID>
           <Name>Invoice Year</Name>
         </AttributeRelationship>
@@ -180,13 +183,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="57187fae-5041-4368-8cf8-88ed13918448">
+    <Attribute dwd:design-time-name="69abbd2a-9e9e-48c3-8e64-ec316126dbde">
       <ID>Invoice Year</ID>
       <Name>Invoice Year</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e471db4d-cff6-401b-93f8-61faeeda1ad9">
+        <KeyColumn dwd:design-time-name="ef0ae57b-48c6-4eb2-b2b5-f49b6dd2a2ae">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9916bef-0844-4312-9507-c06353fafee2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba44c054-3e6c-49d7-9861-bc579601eb77">
             <TableID>Cube_Invoice</TableID>
             <ColumnID>Invoice_x0020_Year</ColumnID>
           </Source>
@@ -198,26 +202,26 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="b52f31d3-ce33-4cb1-bb35-99dc297703f5">
+    <Hierarchy dwd:design-time-name="3c712d59-b4e7-48b4-b049-435fd70180dd">
       <ID>Hierarchy</ID>
       <Name>Invoice Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="62d859f3-ece5-4714-a7f6-f5bdde6e258a">
+        <Level dwd:design-time-name="a6ca6967-ef81-4c25-b655-a35d47f0f8e8">
           <ID>Invoice Year</ID>
           <Name>Invoice Year</Name>
           <SourceAttributeID>Invoice Year</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="2e6288f5-e45b-4d29-b99a-2badc205de53">
+        <Level dwd:design-time-name="28e77979-81c0-4436-a36d-f6e4ac895a6b">
           <ID>Invoice Month</ID>
           <Name>Invoice Month</Name>
           <SourceAttributeID>Invoice Month</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="5c055a2d-1606-4b06-9e2f-f5e5782049dd">
+        <Level dwd:design-time-name="4c4feaae-0747-4347-a584-5eb71936fb61">
           <ID>Invoice Date</ID>
           <Name>Invoice Date</Name>
           <SourceAttributeID>Invoice Date</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="c12a6cb7-faf9-4435-8de2-19a26175c98c">
+        <Level dwd:design-time-name="39737266-9668-4ce3-a2f0-b80fc8c7b4c8">
           <ID>Invoice Number</ID>
           <Name>Invoice Number</Name>
           <SourceAttributeID>Invoice Number</SourceAttributeID>
